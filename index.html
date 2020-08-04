@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
+    <title>Pizza Hub</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" text-bold text-center ">
+            <h1 >Pizza Hub</h1>
+            <h2>Your Pizza palace for your pizza desires</h2>
+            <p>Place your order and get your pizza ready in seconds!</p>
+        </div>
+    </div>
+
+ 
+
+    <div class="row justify-content-around">
+        <form id="pizzaMenu" class="col-md-4">
+
+            <h1> Menu</h1>
+            <div class="form-group row align-items-center">
+                <label class="col-sm-3 col-form-label" for="pizzaSize">Choose Size</label>
+                <select id="pizzaSize" class="form-control col-sm-9">
+                    <option value="500">Small @500/=</option>
+                    <option value="850">Medium @850/=</option>
+                    <option value="1300">Large @1,300/=</option>
+                </select>
+            </div>
+
+            <div class="form-group row align-items-center">
+                <label class="col-sm-3 col-form-label" for="pizzaCrust">Choose Crust</label>
+                <select id="pizzaCrust" class="form-control col-sm-9">
+                    <option value="100">Cheese @100/=</option>
+                    <option value="70">Flatbread @70/=</option>
+                    <option value="120">Sicilian @120/=</option>
+                    <option value="150">Neapolitan @150/=</option>
+                </select>
+            </div>
+
+           
+            <fieldset id="pizzaToppings" class="form-group" form="pizzaMenu">
+            <div class="form-group row align-items-center">
+                <label class="col-sm-3 col-form-label" for="pizzaToppings">Choose Toppins</label>
+                <select id="pizzaToppings" class="form-control col-sm-9">
+                    <option value="120">Pepperoni</option>
+                    <option value="150">Mushroom</option>
+                    <option value="80">Sausage</option>
+                </select>
+             </div>
+ 
+            </fieldset>
+
+            <div class="form-group row align-items-center">
+                <label class="col-sm-3 " for="pizzaNumber">Number of Pizzas</label>
+                <input class="form-control col-sm-9" id="pizzaNumber" type="number" required />
+            </div>
+
+            <div class="form-group">
+                <button class="btn  form-control" type="submit">Place Order</button>
+            </div>
+        </form>
+
+
+        <div id="pizzaCart" class="col-md-4">
+            <h1>Trolley</h1>
+
+            <table class="table table-stripped table-hover">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Crust</th>
+                        <th>Toppings</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <hr />
+            <div class="info">
+                <p>The total charge is <span id="tottal-charge">0</span>/=</p>
+                <form id="delivery">
+                    <p>We offer deliveries at 150/=, interested? Then just click there and get the pizza at your doorstep!</p>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="delivery" type="radio" id="pick-up" value="pick" />
+                        <label class="form-check-label" for="pick-up">
+                            Pick-Up
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="delivery" type="radio" id="deliver" value="deliver" />
+                        <label class="form-check-label" for="deliver">
+                            Delivery
+                        </label>
+                    </div>
+                    <input class="form-control" id="deliveryLocation" type="text" placeholder="Delivery Location..." />
+                </form>
+                <button id="checkoutBtn" class="btn  form-control">Checkout</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+   
+
+</body>
+
+</html>
