@@ -1,0 +1,8 @@
+body{
+    background-image: url(../images/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1,h2,h3{
+    color: magenta;
+}

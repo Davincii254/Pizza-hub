@@ -34,6 +34,7 @@ $(document).ready(function () {
   
 
 
+
   
 });
 
@@ -72,7 +73,7 @@ function addToCart(order) {
     })
     .get()
     .join();
-  $("#pizzaCart tbody").append(`<tr>
+  $("#pizzaTrolley tbody").append(`<tr>
                                   <td>${order.size.html()}</td>
                                   <td>${order.crust.html()}</td>
                                   <td>${toppings}</td>
